@@ -43,8 +43,8 @@ add_files conv_top.cpp -cflags "-std=c++0x -I$::env(FINN_HLS_ROOT) -I$::env(FINN
 add_files -tb conv3_tb.cpp -cflags "-std=c++0x -I$::env(FINN_HLS_ROOT) -I$::env(FINN_HLS_ROOT)/tb" 
 set_top Testbench_conv
 open_solution sol1
-set_part {xczu3eg-sbva484-1-i}
-create_clock -period 5 -name default
+set_part {xcu200-fsgd2104-2-e}
+create_clock -period 3.33 -name default
 csim_design
 csynth_design
 cosim_design
